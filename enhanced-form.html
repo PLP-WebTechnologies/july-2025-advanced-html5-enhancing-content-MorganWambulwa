@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Public Perception Survey on the State of the Economy</title>
+</head>
+<body>
+
+  <header>
+    <h1>Public Perception Survey</h1>
+    <p>This survey collects public opinions on the current economic situation, challenges, and expectations for the future.</p>
+    <p><em><abbr title="required">*</abbr> indicates required field</em></p>
+  </header>
+
+  <main>
+    <!-- List Section -->
+    <section>
+      <h2>Survey Objectives</h2>
+      <ul>
+        <li>Understand public perception of the economy</li>
+        <li>Identify top economic challenges faced by citizens</li>
+        <li>Gather suggestions to improve the economy</li>
+      </ul>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+      <h2>Sample Economic Data</h2>
+      <table border="1">
+        <caption>Kenya Inflation Rates Over Recent Years</caption>
+        <tr>
+          <th>Year</th>
+          <th>Inflation Rate (%)</th>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>7.6</td>
+        </tr>
+        <tr>
+          <td>2024</td>
+          <td>6.2</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+      <h2>Kenya's Economic Landscape Video</h2>
+      <video controls>
+        <source src="Sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Survey Form</h2>
+      <form action="#" method="post" autocomplete="on">
+
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label for="email">Email <abbr title="required">*</abbr></label><br>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Demographics</legend>
+          <p>What is your age group? <abbr title="required">*</abbr></p>
+          <label><input type="radio" name="age_group" value="18-25" required> 18 - 25</label><br>
+          <label><input type="radio" name="age_group" value="26-35"> 26 - 35</label><br>
+          <label><input type="radio" name="age_group" value="36-50"> 36 - 50</label><br>
+          <label><input type="radio" name="age_group" value="50+"> Over 50</label><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Employment and Economic Views</legend>
+          <p>Employment Status <abbr title="required">*</abbr></p>
+          <label><input type="radio" name="employment" value="employed" required> Employed</label><br>
+          <label><input type="radio" name="employment" value="self-employed"> Self-employed</label><br>
+          <label><input type="radio" name="employment" value="unemployed"> Unemployed</label><br>
+          <label><input type="radio" name="employment" value="student"> Student</label><br>
+
+          <p>How would you rate the current situation in Kenya? <abbr title="required">*</abbr></p>
+          <label><input type="radio" name="rating" value="very-good" required> Very Good</label><br>
+          <label><input type="radio" name="rating" value="good"> Good</label><br>
+          <label><input type="radio" name="rating" value="fair"> Fair</label><br>
+          <label><input type="radio" name="rating" value="poor"> Poor</label><br>
+          <label><input type="radio" name="rating" value="very-poor"> Very Poor</label><br>
+
+          <p>What are the top three challenges you are facing? <abbr title="required">*</abbr></p>
+          <label><input type="checkbox" name="challenge" value="cost-of-living" required> High cost of living</label><br>
+          <label><input type="checkbox" name="challenge" value="unemployment"> Unemployment</label><br>
+          <label><input type="checkbox" name="challenge" value="low-wages"> Low wages</label><br>
+          <label><input type="checkbox" name="challenge" value="high-taxes"> High taxes</label><br>
+          <label><input type="checkbox" name="challenge" value="slow-business"> Business slow down</label><br>
+          <label><input type="checkbox" name="challenge" value="no-credit"> Lack of access to credit</label><br>
+
+          <p>Do you feel the government is doing enough to improve the economy? <abbr title="required">*</abbr></p>
+          <label><input type="radio" name="govt_effort" value="yes" required> Yes</label><br>
+          <label><input type="radio" name="govt_effort" value="no"> No</label><br>
+          <label><input type="radio" name="govt_effort" value="not-sure"> Not Sure</label><br>
+
+          <p>In which sector should the government invest more? <abbr title="required">*</abbr></p>
+          <select name="priority_sector" required>
+            <option value="">-- Select a sector --</option>
+            <option value="agriculture">Agriculture</option>
+            <option value="manufacturing">Manufacturing</option>
+            <option value="education">Education</option>
+            <option value="health">Health</option>
+            <option value="technology">Technology</option>
+            <option value="infrastructure">Infrastructure</option>
+          </select><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Suggestions</legend>
+          <label for="changes">What economic changes would you like to see in the next 1–2 years? <abbr title="required">*</abbr></label><br>
+          <textarea id="changes" name="changes" rows="4" cols="50" required></textarea><br>
+
+          <label for="suggestions">Any suggestions on how to improve the economy? <abbr title="required">*</abbr></label><br>
+          <textarea id="suggestions" name="suggestions" rows="4" cols="50" required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Referral Information</legend>
+          <label for="refcode">Referral Code</label><br>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Thank you for taking this survey. Your input matters.</p>
+  </footer>
+
+</body>
+</html>
